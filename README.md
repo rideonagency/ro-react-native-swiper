@@ -15,7 +15,9 @@
   <a href="https://gitter.im/leecade/react-native-swiper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img alt="Join the chat" src="https://badges.gitter.im/leecade/react-native-swiper.svg"></a>
 </p>
 
-# react-native-swiper
+# ro-react-native-swiper
+Library based on [this no longer maintained](https://github.com/leecade/react-native-swiper/).<br/>
+The goal is to try to carry on this library that personally accompanied me in the last years of development in the React Native world.
 
 ## Roadmap
 
