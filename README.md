@@ -1,5 +1,6 @@
 <p align="center">
-  <img alt="react-native-swiper" src="http://i.imgur.com/P4cRUgD.png" width="208">
+RO-REACT-NATIVE-SWIPER <br/>
+(based on leecade repository)
 </p>
 
 <p align="center">
@@ -7,17 +8,16 @@
 </p>
 
 <p align="center">
-  <a href="http://standardjs.com/"><img alt="JavaScript Style Guide" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/v/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/dm/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://github.com/leecade/react-native-swiper/pulls?q=is%3Apr+is%3Aclosed"><img alt="PR Stats" src="https://img.shields.io/issuestats/i/github/leecade/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://github.com/leecade/react-native-swiper/issues?q=is%3Aissue+is%3Aclosed"><img alt="Issue Stats" src="https://img.shields.io/issuestats/p/github/leecade/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://gitter.im/leecade/react-native-swiper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img alt="Join the chat" src="https://badges.gitter.im/leecade/react-native-swiper.svg"></a>
+  <a href="https://npmjs.org/package/ro-react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/v/ro-react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/ro-react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/dm/ro-react-native-swiper.svg?style=flat-square"></a>
 </p>
 
 # ro-react-native-swiper
 Library based on [this no longer maintained](https://github.com/leecade/react-native-swiper/).<br/>
-The goal is to try to carry on this library that personally accompanied me in the last years of development in the React Native world.
+The goal is to try to carry on this library that personally accompanied me in the last years of development in the React Native world.<br/>
+Since the library of leecade has not been updated for years and so many people have opened issues, so I decided to create a new package and try to keep this library up to date.<br/>
+Issues and PRs are always well-liked!
+
 
 ## Roadmap
 
