@@ -1,11 +1,11 @@
 {
-  "name": "react-native-swiper",
+  "name": "ro-react-native-swiper",
   "keywords": [
     "react-component",
     "react-native",
     "ios"
   ],
-  "version": "1.6.0-rc.2",
+  "version": "1.0.0",
   "description": "Swiper component for React Native.",
   "main": "index.js",
   "scripts": {
@@ -44,14 +44,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leecade/react-native-swiper.git"
+    "url": "git+https://github.com/rideonagency/ro-react-native-swiper.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leecade/react-native-swiper/issues"
+    "url": "https://github.com/rideonagency/ro-react-native-swiper/issues"
   },
-  "homepage": "https://github.com/leecade/react-native-swiper#readme",
+  "homepage": "https://github.com/rideonagency/ro-react-native-swiper#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "rimraf": "^2.5.4",
