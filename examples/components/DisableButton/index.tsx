@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import Swiper from 'react-native-swiper'
+import Swiper from 'ro-react-native-swiper'
 
 const styles = {
   wrapper: {},

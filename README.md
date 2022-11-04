@@ -1,5 +1,6 @@
 <p align="center">
-  <img alt="react-native-swiper" src="http://i.imgur.com/P4cRUgD.png" width="208">
+RO-REACT-NATIVE-SWIPER <br/>
+(based on leecade repository)
 </p>
 
 <p align="center">
@@ -7,69 +8,23 @@
 </p>
 
 <p align="center">
-  <a href="http://standardjs.com/"><img alt="JavaScript Style Guide" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/v/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/dm/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://github.com/leecade/react-native-swiper/pulls?q=is%3Apr+is%3Aclosed"><img alt="PR Stats" src="https://img.shields.io/issuestats/i/github/leecade/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://github.com/leecade/react-native-swiper/issues?q=is%3Aissue+is%3Aclosed"><img alt="Issue Stats" src="https://img.shields.io/issuestats/p/github/leecade/react-native-swiper.svg?style=flat-square"></a>
-  <a href="https://gitter.im/leecade/react-native-swiper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img alt="Join the chat" src="https://badges.gitter.im/leecade/react-native-swiper.svg"></a>
+  <a href="https://npmjs.org/package/ro-react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/v/ro-react-native-swiper.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/ro-react-native-swiper"><img alt="npm version" src="http://img.shields.io/npm/dm/ro-react-native-swiper.svg?style=flat-square"></a>
 </p>
 
 # ro-react-native-swiper
 Library based on [this no longer maintained](https://github.com/leecade/react-native-swiper/).<br/>
-The goal is to try to carry on this library that personally accompanied me in the last years of development in the React Native world.
+The goal is to try to carry on this library that personally accompanied me in the last years of development in the React Native world.<br/>
+Since the library of leecade has not been updated for years and so many people have opened issues, so I decided to create a new package and try to keep this library up to date.<br/>
+Issues and PRs are always well-liked!
+
 
 ## Roadmap
 
 > see: [ROADMAP.md](ROADMAP.md)
 
 ## Changelogs
-
-- **[1.6.0-rc]**
-  - Dependency
-    - Remove ViewPagerAndroid, use ScrollView #1009
-  - Test Integration
-    - Setup e2e test
-  - TypeScript
-    - correct the wrong types #1000
-    - Add missing scrollBy TypeScript definition #931
-  - New Feature
-    - add scrollTo #831
-    - Added prop to disable the PrevButton #749
-    - Optionally render page #1004
-  - Bug Fix
-    - ES6 and CommonJS compatibility #717
-    - Solves the issue of state messing up when parent component calls setState #939
-    - replay when autoplay is setted to true #1002
-    - fix broken examples and migrate to react-native 0.60.x
-    - fix bad jumping on ios when loadMinimal set true
-    - fix fliker when loop and loadMinimal are enabled #1062
-
-* [1.5.6]
-
-  - Fix [#16](https://github.com/leecade/react-native-swiper/issues/16), [#36](https://github.com/leecade/react-native-swiper/issues/36), [#371](https://github.com/leecade/react-native-swiper/issues/371), [#410](https://github.com/leecade/react-native-swiper/issues/410), [#411](https://github.com/leecade/react-native-swiper/issues/411), [#422](https://github.com/leecade/react-native-swiper/issues/422), [#468](https://github.com/leecade/react-native-swiper/issues/468) Fix landscape orientation auto resize! (thanks [@ahmed3mar](https://github.com/ahmed3mar), [@timmywil](https://github.com/timmywil))
-  - Add containerStyle prop to customize the view container.
-
-* [1.5.5]
-  - Update: using PropTypes from prop-types and Change View.propTypes to ViewPropTypes
-
-- [1.5.4]
-
-  - Added easily accessible pagination point manipulation: use `dotColor` / `activeDotColor` and `dotStyle` / `activeDotStyle` (thanks [@denizs](https://github.com/denizs))
-  - Added scrollEnabled prop to documentation (thanks [@ibandominguez](https://github.com/ibandominguez))
-
-- [1.5.3]
-
-  - Add loadMinimalLoader prop to customize `<ActivityIndicator />` (thanks [@Exilz](https://github.com/Exilz))
-  - Disable autoplay timer when prop changes to false (thanks [@dizlexik](https://github.com/dizlexik))
-  - Special thanks to [@hypatiah](https://github.com/dizlexik) for fixed some grammatical errors in README
-
-- [1.5.2]
-  - Add yarn lock
-  - Fix jitter when quickly swiping back and forth between pages (iOS) (thanks [@nemophrost](https://github.com/nemophrost))
-  - The first webview always reloaded when injecting the rest of the children (thanks [@eosterberg](https://github.com/eosterberg))
-
-> see more: [CHANGELOG.md](CHANGELOG.md)
+> see on: [CHANGELOG.md](CHANGELOG.md)
 
 ## Show Cases
 
@@ -113,16 +68,16 @@ The goal is to try to carry on this library that personally accompanied me in th
 
 ### Installation
 
-> v1.5.14
+> npm
 
 ```bash
-$ npm i react-native-swiper --save
+$ npm i ro-react-native-swiper --save
 ```
 
-> v1.6.0-rc
+> yarn
 
 ```
-npm i --save react-native-swiper@next
+yarn add ro-react-native-swiper@next
 ```
 
 ### Basic Usage
@@ -348,6 +303,4 @@ After development, you should add test for your modification and make all tests 
 
 ## Questions
 
-Feel free to [contact me](mailto:leecade@163.com) or [create an issue](https://github.com/leecade/react-native-swiper/issues/new)
-
-> Inspired by [nolimits4web/Swiper](https://github.com/nolimits4web/swiper/) & Design material from [Dribbble](https://dribbble.com/) & made with ♥.
+Feel free to [create an issue](https://github.com/rideonagency/ro-react-native-swiper/issues/new)

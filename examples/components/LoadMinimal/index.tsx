@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import { Text, View, Image, Dimensions, StyleSheet } from 'react-native'
-import Swiper from 'react-native-swiper'
+import Swiper from 'ro-react-native-swiper'
 import { Model } from 'react-model'
 const { width } = Dimensions.get('window')
 const loading = require('./img/loading.gif')
