@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, Dimensions } from 'react-native'
-import Swiper from 'react-native-swiper'
+import Swiper from 'ro-react-native-swiper'
 const { width } = Dimensions.get('window')
 
 const styles = {

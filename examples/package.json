@@ -1,48 +1,35 @@
 {
-  "name": "examples",
+  "name": "Examples",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "rm -rf node_modules/react-native-swiper/examples && react-native start || react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "rm -rf node_modules/ro-react-native-swiper/examples && react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.8.6",
-    "react-model": "^3.0.0",
-    "react-native": "0.60.5",
-    "react-native-gesture-handler": "^1.4.1",
-    "react-native-reanimated": "^1.3.0",
-    "react-native-screens": "^1.0.0-alpha.23",
-    "react-native-swiper": "../",
-    "react-navigation": "^4.0.10",
-    "react-navigation-stack": "^1.9.3"
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.1",
+    "react": "17.0.2",
+    "react-model": "^4.2.1",
+    "react-native": "0.68.2",
+    "react-native-safe-area-context": "^4.4.1",
+    "react-native-screens": "^3.18.2",
+    "ro-react-native-swiper": "../"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/runtime": "^7.6.0",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "@types/react": "^16.9.2",
-    "@types/react-native": "^0.60.15",
-    "babel-jest": "^24.9.0",
-    "detox": "^14.3.4",
-    "eslint": "^6.4.0",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.8.6"
+    "@babel/core": "^7.19.6",
+    "@babel/runtime": "^7.20.1",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "babel-jest": "^29.2.2",
+    "eslint": "^8.26.0",
+    "jest": "^29.2.2",
+    "metro-react-native-babel-preset": "^0.73.3",
+    "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "detox": {
-    "test-runner": "jest",
-    "configurations": {
-      "ios.sim.debug": {
-        "binaryPath": "ios/build/examples/Build/Products/Debug-iphonesimulator/examples.app",
-        "build": "xcodebuild -workspace ios/examples.xcworkspace -scheme examples -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
-        "type": "ios.simulator",
-        "name": "iPhone 7"
-      }
-    }
   }
 }

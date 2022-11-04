@@ -1,20 +1,21 @@
 /**
  * @format
  */
-import React from 'react'
-import {
-  AppRegistry,
-  Text,
-  SafeAreaView,
-  View,
-  StyleSheet,
-  FlatList,
-  TouchableOpacity
-} from 'react-native'
-import { createStackNavigator } from 'react-navigation-stack'
-import { name as appName } from './app.json'
 
-import AutoPlay from './components/AutoPlay'
+import React from 'react';
+import type { Node } from 'react';
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+  TouchableOpacity,
+  FlatList
+} from 'react-native';
+import AutoPlay from './components/AutoPlay';
 import Basic from './components/Basic' // Only update index when scrollEnd
 import DisableButton from './components/DisableButton'
 import Loop from './components/Loop'
@@ -22,10 +23,10 @@ import Dynamic from './components/Dynamic'
 import LoadMinimal from './components/LoadMinimal' // flicker existing when shift from last to first on Android (or last to first)
 import NestSwiper from './components/NestSwiper'
 import Phone from './components/Phone'
-// import PhotoView from './components/PhotoView/'; // not working
 import Swiper from './components/Swiper' // working but no title displayed, direction vertical not work well on android
 import SwiperNumber from './components/SwiperNumber' // working but no title displayed
-import { createAppContainer } from 'react-navigation'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const DATA = [
   {
@@ -58,7 +59,7 @@ const DATA = [
   {
     name: 'SwiperNumber'
   }
-]
+];
 
 function Item({ title, navigation }) {
   return (
@@ -84,26 +85,27 @@ const Home = ({ navigation }) => {
   )
 }
 
-const AppNavigator = createStackNavigator(
-  {
-    Home,
-    AutoPlay,
-    Basic,
-    DisableButton,
-    Loop,
-    Dynamic,
-    LoadMinimal,
-    NestSwiper,
-    Phone,
-    Swiper,
-    SwiperNumber
-  },
-  {
-    initialRouteName: 'Home'
-  }
-)
+const Stack = createNativeStackNavigator();
 
-const App = createAppContainer(AppNavigator)
+const App: () => Node = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="AutoPlay" component={AutoPlay} />
+        <Stack.Screen name="Basic" component={Basic} />
+        <Stack.Screen name="DisableButton" component={DisableButton} />
+        <Stack.Screen name="Loop" component={Loop} />
+        <Stack.Screen name="Dynamic" component={Dynamic} />
+        <Stack.Screen name="LoadMinimal" component={LoadMinimal} />
+        <Stack.Screen name="NestSwiper" component={NestSwiper} />
+        <Stack.Screen name="Phone" component={Phone} />
+        <Stack.Screen name="Swiper" component={Swiper} />
+        <Stack.Screen name="SwiperNumber" component={SwiperNumber} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 const styles = StyleSheet.create({
   item: {
@@ -115,6 +117,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24
   }
-})
+});
 
-AppRegistry.registerComponent(appName, () => App)
+export default App;
