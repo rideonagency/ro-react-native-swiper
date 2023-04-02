@@ -16,6 +16,7 @@ import {
   FlatList
 } from 'react-native';
 import AutoPlay from './components/AutoPlay';
+import AutoPlayImages from './components/AutoPlayImages';
 import Basic from './components/Basic' // Only update index when scrollEnd
 import DisableButton from './components/DisableButton'
 import Loop from './components/Loop'
@@ -31,6 +32,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const DATA = [
   {
     name: 'AutoPlay'
+  },
+  {
+    name: 'AutoPlayImages'
   },
   {
     name: 'Basic'
@@ -93,6 +97,7 @@ const App: () => Node = () => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="AutoPlay" component={AutoPlay} />
+        <Stack.Screen name="AutoPlayImages" component={AutoPlayImages} />
         <Stack.Screen name="Basic" component={Basic} />
         <Stack.Screen name="DisableButton" component={DisableButton} />
         <Stack.Screen name="Loop" component={Loop} />
